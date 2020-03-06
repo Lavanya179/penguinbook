@@ -1,0 +1,4 @@
+text (BooksUrl) {
+  description (The url of a piece of news in the official website)
+}
+

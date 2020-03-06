@@ -1,0 +1,4 @@
+text (ImageUrl) {
+  description (List of images related to a restaurant)
+}
+

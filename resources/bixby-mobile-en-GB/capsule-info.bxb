@@ -1,0 +1,19 @@
+capsule-info {
+  developer-name (Samsung Electronics Co., Ltd.)
+  display-name (Penguin & Random House books)
+  dispatch-name (Penguin Books)
+  dispatch-aliases{
+    alias (Penguin Books)
+    alias (books)
+  }
+  description (Enter the author to to find list of books)
+  icon-asset (icons/Penguin_logo.png)
+  website-url (https://example.com/)
+  terms-url (https://example.com/terms-of-use/)
+  search-keywords{
+    keyword (penguin books)
+    keyword (penguin book)
+    keyword (books)
+    keyword (book)
+  }
+}

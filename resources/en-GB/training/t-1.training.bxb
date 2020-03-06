@@ -1,0 +1,5 @@
+train (t-191e7qv0q5spkdmqs20ukjbak) {
+  utterance ("[g:GetBooksByCategory] show me books on (photography)[v:ChildGenre:Art+Architecture+Photography]")
+  plan (Y2BmUCzLLNMrSM1LL83Mc8rPzy7WA5HOiSWp6flFlZ4lqbkMyhhK3FNLwAynSphCBmkMRc4ZmTkp7ql5RakMTAyMQMwAJBkZQADKBwA=)
+  last-modified (1582018718435)
+}

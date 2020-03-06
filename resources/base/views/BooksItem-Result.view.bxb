@@ -1,0 +1,49 @@
+result-view {
+  match: BookDetails (item) {
+    min (Required)
+    max (One)
+  }
+
+   message{
+    template-macro (PenguinBooks_3_0_Category_Author_Heading) {
+        param (theTitle) {expression (item.title)}
+        param (theAuthor) {expression (item.author)}
+      }
+  }
+  render {
+    layout {
+      section{
+        content {
+          image-card{
+            image-url("[#{value(item.imageUrl)}]")
+            aspect-ratio(4:3)
+            image-object-fit (Contain)
+            image-object-position (Center)
+            title-area{
+              slot1{
+                text{
+                  value("")
+                }
+              }
+            }
+            on-click {
+              intent {
+                goal: PunchoutString
+               // value: item.waterstonesURL$expr(waterstonesURL)
+                value: PunchoutString$expr(item.waterstonesURL)
+              }
+            }
+          }
+          paragraph{
+              value("[#{value(item.description)}]")
+          }  
+        }
+      }
+    }
+  }
+  conversation-drivers{
+    conversation-driver {
+      template ("list other [#{value(item.childGenreText)}] books ")
+    }
+  }
+}

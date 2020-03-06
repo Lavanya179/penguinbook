@@ -1,0 +1,62 @@
+layout-macro-def (bookCategories-summary){
+  params{
+     param (bookCategoryItem){
+      type (BookCategoryItem)
+      min (Required)
+      max (One)
+    }
+  }
+
+
+
+  content{
+
+    compound-card {
+
+      	        on-click{
+		        intent{
+		          goal:BookCategoryDetails
+		          value:BookCategoryItem$expr(bookCategoryItem)
+	          }
+	        }
+          
+      content {
+        image-card{
+          image-url ("[#{value(bookCategoryItem.imageUrl)}]")
+          aspect-ratio (4:3)
+          image-object-fit (Contain)
+          image-object-position (Right)
+      
+          title-area{
+            halign (Start)
+            slot1{
+              single-line{
+                text("[#{value(bookCategoryItem.author)}]")
+              }
+            }
+            slot2{
+              single-line{
+                text("[#{value(bookCategoryItem.title)}]") {
+                  style(Detail_M)
+                }
+              }
+            }
+          slot3 {
+            paragraph {
+              value ("[#{value(bookCategoryItem.reviewText)}]")
+              style (Detail_L)
+            }
+          }
+
+          }
+        }
+        paragraph {     
+          value {
+            template ("[#{value(bookCategoryItem.description)}]") 
+          }
+          style(Legal)
+        }
+      }
+    }
+  }
+}

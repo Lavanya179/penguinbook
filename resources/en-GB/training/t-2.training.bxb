@@ -1,0 +1,10 @@
+train (t-2o248bpopa96jhnkdmxbwnyya) {
+  utterance ("[g:GetBooksByAuthor] show books by (King)[v:FirstName] (Abdullah of)[v:MiddleNames] (Jordan)[v:Surname]")
+  plan (Y2BlkCrLLNMrSM1LL83Mc8rPzy7WA5OeJam5DIoYcu6pJWCGU6VjaUlGfhEW7W6ZRcUlfom5qQwyGHK+mSkpOakgyWIGCQzZ4NKiPJA+FgZGBiYGZiDNAGRBIAwgyQEA)
+  last-modified (1583335995338)
+}
+train (t-2yqm2z4luik6medfxjefs3ypp) {
+  utterance ("[g:GetBooksByAuthor] list the novels by (Edgar)[v:FirstName] Allan (Poe)[v:Surname]")
+  plan (Y2BhkCrLLNMrSM1LL83Mc8rPzy7WA5OeJam5DIoYcu6pJWCGU6VjaUlGfhEW7W6ZRcUlfom5qQwSGHLBpUV5IBlmBkYGJiDJAKRBEALgogA=)
+  last-modified (1581932181070)
+}

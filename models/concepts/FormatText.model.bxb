@@ -1,0 +1,3 @@
+text (FormatText) {
+  description (A short sum of a piece of news)
+}

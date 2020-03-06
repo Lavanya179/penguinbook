@@ -1,0 +1,4 @@
+boolean (IsSearchPage) {
+  description (Describes whether the referred page is for search)
+}
+

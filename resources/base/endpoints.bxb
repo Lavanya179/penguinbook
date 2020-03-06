@@ -1,0 +1,24 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (GetBooksByAuthor) {
+      accepted-inputs(firstName, middleNames, surname)
+      local-endpoint (GetBooksByAuthor.js)
+    }
+    action-endpoint (GetBookDetailsFromBook) {
+      accepted-inputs (booksItem)
+      local-endpoint (GetBookDetailsFromBook.js)
+    }
+    action-endpoint (GetAuthorByTitle) {
+      accepted-inputs (title)
+      local-endpoint (GetAuthorByTitle.js)
+    }
+    action-endpoint (GetCategories) {
+      local-endpoint (GetCategories.js)
+    }
+    action-endpoint (GetBooksByCategory) {
+      accepted-inputs (parentGenre, childGenre, format, page)
+    local-endpoint (GetBooksByCategory.js)
+    }
+  }
+}
+

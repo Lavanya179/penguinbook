@@ -1,0 +1,59 @@
+structure (BooksItem) {
+  description (A piece of news from the RSS)
+  property (imageUrl) {
+    type (ImageUrl)
+    min (Optional) max (One)
+  }
+  property (description) {
+    type (Description)
+    min (Optional) max (One)
+  }
+  property (author) {
+    type (Author)
+    min (Required) max (One)
+  }
+  property (authorTitle) {
+    type (AuthorTitle)
+    min (Required) max (One)
+  }  
+  property (unknownAuthor) {
+    type (UnknownAuthor)
+    min (Required) max (One)
+  }  
+  property (datetime) {
+    type (DateTime)
+    min (Optional) max (One)
+  }
+  property (content) {
+    type (Content)
+    min (Optional) max (One)
+  }
+    property (contributor) {
+    type (Contributor)
+    min (Optional) max (One)
+  }
+  property (booksUrl) {
+    type (BooksUrl)
+    min (Optional) max (One)
+  }
+  property (childGenreText) {
+    type (ChildGenreText)
+    min (Optional) max (One)
+  }
+  property (categoryList){
+    type(Category)
+    min (Optional) max (Many)
+  }
+  property (title) {
+    type(Title)
+    min (Optional) max (One)
+  }
+  property (isbn) {
+    type(Isbn)
+    min (Required) max (One)
+  }
+  property (waterstonesURL) {
+    type(WaterstonesURL)
+    min (Required) max (One)
+  }
+}

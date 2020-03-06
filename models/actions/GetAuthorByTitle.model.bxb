@@ -1,0 +1,17 @@
+action (GetAuthorByTitle) {
+  description (Retrieving Author by title)
+  type (Search)
+  collect {
+    input (title){
+      type (Title)
+      max (One) min (Required)
+      default-init{
+        intent{
+          goal : GetAuthorByTitle
+          value : Title$expr(title)
+        }
+      }
+    } 
+  }
+  output (AuthorItem)
+}

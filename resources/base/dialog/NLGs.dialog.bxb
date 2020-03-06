@@ -1,0 +1,123 @@
+template-macro-def (PenguinBooks_1_0_Title_Heading){
+    params {
+    param (bookCount) {
+      type (core.Integer)
+      // min (Required) max (One)
+    }
+    param (theAuthor) {
+      type (core.Text)
+      // min (Required) max (One)
+    }
+  }
+  content{
+    choose(Random) {
+     template ("#{theAuthor} has #{bookCount} books published with Random House Penguin.")
+    }
+  }
+}
+
+template-macro-def (PenguinBooks_1_0_A_Title_Heading){
+    params {
+     param (theAuthor) {
+      type (core.Text)
+      // min (Required) max (One)
+    }
+  }
+  content{
+    choose(Random) {
+     template ("#{theAuthor} has 1 book published with Random House Penguin.")
+    }
+  }
+}
+
+template-macro-def (PenguinBooks_2_0_No_Author) {
+  params {
+     param(noAuthor) {
+       type (core.Text)
+     }
+  }
+  content {
+    choose(Random) {
+        template ("#{noAuthor}")
+    }
+  }
+}
+template-macro-def (PenguinBooks_3_0_Category_Author_Heading){
+    params {
+    param (theAuthor) {
+      type (core.Text)
+
+    }
+    param (theTitle) {
+      type (core.Text)
+
+    }
+  }
+  content{
+    choose(Random) {
+     template ("#{theTitle} by #{theAuthor}")
+    }
+  }
+}
+
+template-macro-def (PenguinBooks_2_0_Category_Heading){
+    params {
+    param (subCategory) {
+      type (core.Text)
+
+    }
+    param (mainCategory) {
+      type (core.Text)
+
+    }
+  }
+  content{
+    choose(Random) {
+     template ("List of #{subCategory} #{mainCategory}")
+    }
+  }
+}
+
+template-macro-def (PenguinBooks_1_2_No_Books){
+    params {
+    param (theAuthor) {
+      type (core.Text)
+    }
+  }
+  content{
+    choose(Random) {
+     template ("We cannot find an author called: '#{theAuthor}'.")
+    }
+  }
+}
+
+template-macro-def (PenguinBooks_1_3_No_Author){
+    params {
+    param (theBook) {
+      type (core.Text)
+    }
+  }
+  content{
+    choose(Random) {
+     template ("we cannot find a book with the title: '#{theBook}'.")
+    }
+  }
+}
+
+template-macro-def (PenguinBooks_2_0_Title_Heading){
+    params {
+    param (theTitle) {
+      type (core.Text)
+      // min (Required) max (One)
+    }
+    param (theAuthor) {
+      type (core.Text)
+      // min (Required) max (One)
+    }
+  }
+  content{
+    choose(Random) {
+     template ("#{theAuthor} wrote '#{theTitle}'.")
+    }
+  }
+}

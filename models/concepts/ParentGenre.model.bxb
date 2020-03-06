@@ -1,0 +1,7 @@
+enum (ParentGenre) {
+  description (Main book catergies)
+  // Capitals
+  symbol (Fiction)
+  symbol (NonFiction)
+  symbol (Children)
+}

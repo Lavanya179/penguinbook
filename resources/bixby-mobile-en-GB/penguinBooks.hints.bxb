@@ -1,0 +1,22 @@
+hints {
+  uncategorized {
+    hint ("In Penguin Books list book categories" ) {
+      preferred-hint ("list book categories")
+    }
+    hint ("In Penguin Books find novels written by Graham Greene") {
+      preferred-hint ("Search for Graham Green novels")
+    }
+    hint ("In Penguin Books find John Smith novels") {
+      preferred-hint ("Find books written by John Smith")
+    }
+    hint ("In Penguin Books list Isaac Asimov novels") {
+      preferred-hint ("List Isaac Asimov novels")
+    }
+    hint ("In Penguin Books find cookery books") {
+      preferred-hint ("find cookery books")
+    }
+    hint ("In Penguin Books show horror ebooks") {
+      preferred-hint ("show horror ebooks")
+    }
+  }
+}

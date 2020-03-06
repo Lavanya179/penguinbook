@@ -1,0 +1,13 @@
+action (GetBookCategoryDetailsFromBook) {
+
+  description (Retrieving books from Penguin)
+  type (Search)
+  collect {
+        input (bookCategoryItem){
+      type (BookCategoryItem)
+      max (One) min (Required)
+ 
+    } 
+  }
+  output (BookCategoryDetails)
+}

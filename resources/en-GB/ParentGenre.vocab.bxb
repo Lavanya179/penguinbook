@@ -1,0 +1,20 @@
+vocab (ParentGenre) {
+  "NonFiction" {
+    "nonfiction"
+    "non fiction"
+    "non-fiction"    
+  }
+  "Fiction" {
+    "fiction"
+    "novel"
+    "story"
+    "stories"
+    "novels"
+  }
+  "Children" {
+    "childrens"
+    "kids"
+    "children"
+    "childs"
+  }
+}

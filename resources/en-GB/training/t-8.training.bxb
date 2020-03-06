@@ -1,0 +1,10 @@
+train (t-89nuja8xlh5nlpppyt3njtrm9) {
+  utterance ("[g:GetBooksByAuthor] search for (arthur)[v:FirstName] c (clarke)[v:Surname]  novels")
+  plan (Y2BhkCrLLNMrSM1LL83Mc8rPzy7WA5OeJam5DIoYcu6pJWCGU6VjaUlGfhEW7W6ZRcUlfom5qQwSGHLBpUV5IBlmBkYGJiDJAKRBEALgogA=)
+  last-modified (1582018684465)
+}
+train (t-8tqcyvn7zyv0884edhjlv5euq) {
+  utterance ("[g:GetBooksByCategory] list (page 2)[v:Page] (love)[v:ChildGenre:Romance] (stories)[v:ParentGenre:Fiction]")
+  plan (Y2BlUCzLLNMrSM1LL83Mc8rPzy7WA5HOiSWp6flFlZ4lqbkMyhhK3FNLwAynSphCBmkMRc4ZmTkp7ql5RakMohiSAYnpqQwyWISLUvNKIJpYGBgZmBiYgTQDkAWBMIAkBwA=)
+  last-modified (1580399286582)
+}

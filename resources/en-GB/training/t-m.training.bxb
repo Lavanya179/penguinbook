@@ -1,0 +1,10 @@
+train (t-m0nlauhk900cqcjniy2jl28x7) {
+  utterance ("[g:GetBooksByAuthor] list books by (shakespeare)[v:Surname] ")
+  plan (Y2BmkCrLLNMrSM1LL83Mc8rPzy7WA5OeJam5DIoYcu6pJWCGU6VjaUlGfhGDBIaS4NKivMTcVAYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1581952321792)
+}
+train (t-mrm8toqglo9028au7xmra6bgr) {
+  utterance ("[g:GetBooksByAuthor] list the novels of (John)[v:FirstName] (Brown)[v:Surname]")
+  plan (Y2BhkCrLLNMrSM1LL83Mc8rPzy7WA5OeJam5DIoYcu6pJWCGU6VjaUlGfhEW7W6ZRcUlfom5qQwSGHLBpUV5IBlmBkYGJiDJAKRBEALgogA=)
+  last-modified (1582102908374)
+}

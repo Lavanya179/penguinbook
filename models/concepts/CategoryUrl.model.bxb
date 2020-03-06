@@ -1,0 +1,5 @@
+text (CategoryUrl) {
+  description (The url to puch out for category news)
+}
+
+

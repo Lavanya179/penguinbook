@@ -1,0 +1,39 @@
+action (GetBooksByAuthor) {
+
+ 
+  description (Retrieving books from Penguin)
+  type (Search)
+  collect {
+    input (firstName){
+      type (FirstName)
+      max (One) min (Optional)
+      default-init{
+        intent{
+          goal : GetBooksByAuthor
+          value : FirstName$expr(firstName)
+        }
+      }
+    } 
+    input (middleNames){
+      type (MiddleNames)
+      max (One) min (Optional)
+      default-init{
+        intent{
+          goal : GetBooksByAuthor
+          value : MiddleNames$expr(middleNames)
+        }
+      }
+    }     
+    input (surname){
+      type (Surname)
+      max (One) min (Required)
+      default-init{
+        intent{
+          goal : GetBooksByAuthor
+          value : Surname$expr(surname)
+        }
+      }
+    } 
+  }
+  output (BooksItem)
+}

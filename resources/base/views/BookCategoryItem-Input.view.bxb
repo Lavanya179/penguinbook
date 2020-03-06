@@ -1,0 +1,43 @@
+result-view {
+  match : BookCategoryItem (bookCategoryItem) {
+    max (Many)
+    min (Required)
+  }
+  message{
+    if (bookCategoryItem[0].title==null) {
+        template ("No books found for these categories") 
+    } else {
+    template-macro (PenguinBooks_2_0_Category_Heading) {
+        param (subCategory){ expression (bookCategoryItem[0].childGenreText)}
+        param (mainCategory) {expression (bookCategoryItem[0].parentGenreText)}
+      }
+    }
+  }
+  render {
+    layout {
+      section {
+        content {
+          for-each (bookCategoryItem) {
+            as (item) {
+              layout-macro(bookCategories-summary){
+                param(bookCategoryItem){
+                  expression(item)
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  conversation-drivers{
+    conversation-driver {
+      if (bookCategoryItem[0].page!=null && bookCategoryItem[0].page!='') {
+        template ("List [#{value(bookCategoryItem[0].page)}] [#{value(bookCategoryItem[0].childGenreText)}] [#{value(bookCategoryItem[0].parentGenreText)}] ")
+      }
+    }
+  }
+}
+
+

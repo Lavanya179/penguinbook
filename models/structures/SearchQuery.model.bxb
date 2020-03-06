@@ -1,0 +1,29 @@
+structure (SearchQuery) {
+  description (A piece of news from the RSS)
+
+  property (firstName) {
+    type (FirstName)
+    min (Optional) max (One)
+  }
+  property (middleNames) {
+    type (MiddleNames)
+    min (Optional) max (One)
+  }
+  property (lastName) {
+    type (LastName)
+    min (Optional) max (One)
+  }
+  property (firstInitial) {
+    type (FirstInitial)
+    min (Optional) max (One)
+  }
+  property (secondInitial) {
+    type (SecondInitial)
+    min (Optional) max (One)
+  }
+  property (title) {
+    type(Title)
+    min (Optional) max (One)
+  }
+}
+

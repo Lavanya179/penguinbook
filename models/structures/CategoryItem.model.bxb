@@ -1,0 +1,19 @@
+structure (CategoryItem) {
+  description (Penguin Books book types)
+
+  property (fiction) {
+    type (Fiction)
+    min (Required) max (One)
+  }
+
+    property (nonFiction) {
+    type (NonFiction)
+    min (Required) max (One)
+  }
+
+      property (formatText) {
+    type (FormatText)
+    min (Required) max (One)
+  }
+
+}

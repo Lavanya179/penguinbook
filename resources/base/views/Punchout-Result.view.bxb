@@ -1,0 +1,11 @@
+result-view {
+  match: PunchoutString(this)
+  message {
+    template ("")
+  }
+  app-launch {
+    payload-uri {
+      template ("#{raw (this)}")
+    }
+  }
+}

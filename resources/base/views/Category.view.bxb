@@ -1,0 +1,46 @@
+result-view {
+  match : CategoryItem (categoryItem) {
+    max (Many)
+    min (Required)
+  }
+  message{
+    template("Book Categories and Formats")
+  }
+  render {
+    layout {
+      section {
+        content {
+          single-line{
+                 text ("Format") 
+          } 
+          single-line{
+                 text ("eBooks and Books") {
+                   style(Detail_L)
+                 }
+          }           
+        }
+      }
+      section {
+        content {
+          single-line{
+                 text ("Fiction Categories") 
+          }
+          paragraph{
+            value("[#{value(categoryItem.fiction)}]")
+          }  
+        }
+      }
+      section {
+        content {
+          single-line{
+                 text ("Nonfiction Categories") 
+          }
+          paragraph{
+            value("[#{value(categoryItem.nonFiction)}]")
+          }  
+        }
+      }
+
+    }
+  }
+}

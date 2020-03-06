@@ -1,0 +1,65 @@
+layout-macro-def (books-summary){
+  params{
+     param (booksItem){
+      type (BooksItem)
+      min (Required)
+      max (One)
+    }
+  }
+
+
+
+content{
+
+    compound-card {
+
+      	        on-click{
+		        intent{
+		          goal:BookDetails
+		          value:BooksItem$expr(booksItem)
+	          }
+	        }
+          
+      content {
+        image-card{
+          image-url ("[#{value(booksItem.imageUrl)}]")
+          aspect-ratio (4:3)
+          image-object-fit (Contain)
+          image-object-position (Right)
+      
+          title-area{
+            halign (Start)
+            slot1{
+              single-line{
+                text("[#{value(booksItem.author)}]")
+              }
+            }
+            slot2{
+              single-line{
+                text("[#{value(booksItem.title)}]") {
+                  style(Detail_M)
+                }
+              }
+            }
+          slot3 {
+            paragraph {
+              value ("[#{value(booksItem.contributor)}]") 
+                style (Legal)
+              }
+            }
+          }
+        }
+        paragraph {     
+          value {
+            template ("[#{value(booksItem.description)}]") 
+          }
+          style(Legal)
+        }
+      }
+    }
+  }
+}
+
+
+
+

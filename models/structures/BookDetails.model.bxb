@@ -1,0 +1,3 @@
+structure (BookDetails) {
+  role-of (BooksItem)
+}

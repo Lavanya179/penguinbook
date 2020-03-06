@@ -1,0 +1,15 @@
+train (t-dgrq33w336la9ng7un1pqn1bm) {
+  utterance ("[g:GetBooksByCategory] Find (cookery)[v:ChildGenre:Food+&+Drink] (non-fiction)[v:ParentGenre:NonFiction]")
+  plan (Y2BhUCzLLNMrSM1LL83Mc8rPzy7WA5HOiSWp6flFlZ4lqbkMyhhK3FNLwAynSphCBmkMRc4ZmTkp7ql5RakMMhiSAYlFqXklEFlmBkYGJiDJAKRBEALgogA=)
+  last-modified (1580833803876)
+}
+train (t-dk0mczshiah27pefi8xryalgs) {
+  utterance ("[g:GetBooksByCategory] list (science fiction)[v:ChildGenre:Science+Fiction] (ebooks)[v:Format:Ebook]")
+  plan (Y2BhUCzLLNMrSM1LL83Mc8rPzy7WA5HOiSWp6flFlZ4lqbkMyhhK3FNLwAynSphCBmkMRc4ZmTkp7ql5RakM4hiSbvlFuYklDMwMjAxMQJIBSIMgBMBFAQ==)
+  last-modified (1581341070742)
+}
+train (t-dp9idovvk5cfqtm7cc94a21el) {
+  utterance ("[g:GetBooksByCategory] Find (education)[v:ChildGenre:Education+&+Reference] (nonfiction)[v:ParentGenre:NonFiction]")
+  plan (Y2BhUCzLLNMrSM1LL83Mc8rPzy7WA5HOiSWp6flFlZ4lqbkMyhhK3FNLwAynSphCBmkMRc4ZmTkp7ql5RakMMhiSAYlFqXklEFlmBkYGJiDJAKRBEALgogA=)
+  last-modified (1580830506954)
+}

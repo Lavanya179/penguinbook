@@ -1,0 +1,10 @@
+train (t-h2adfbgwfnsjkc6b6ibr3pkha) {
+  utterance ("[g:GetBooksByAuthor] list novels by (louisa)[v:FirstName] may (alcott)[v:Surname]")
+  plan (Y2BhkCrLLNMrSM1LL83Mc8rPzy7WA5OeJam5DIoYcu6pJWCGU6VjaUlGfhEW7W6ZRcUlfom5qQwSGHLBpUV5IBlmBkYGJiDJAKRBEALgogA=)
+  last-modified (1581932261415)
+}
+train (t-h6m6xsyd4nngc7onn1z7b6rl9) {
+  utterance ("[g:GetBooksByCategory] list (love)[v:ChildGenre:Romance] (stories)[v:ParentGenre:Fiction]")
+  plan (Y2BhUCzLLNMrSM1LL83Mc8rPzy7WA5HOiSWp6flFlZ4lqbkMyhhK3FNLwAynSphCBmkMRc4ZmTkp7ql5RakMMhiSAYlFqXklEFlmBkYGJiDJAKRBEALgogA=)
+  last-modified (1580402091304)
+}

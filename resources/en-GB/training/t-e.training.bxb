@@ -1,0 +1,15 @@
+train (t-efyi5on244rum3s4gvcpzttq9) {
+  utterance ("[g:GetBooksByAuthor] find (Charles)[v:FirstName] (Dickens)[v:Surname] books")
+  plan (Y2BhkCrLLNMrSM1LL83Mc8rPzy7WA5OeJam5DIoYcu6pJWCGU6VjaUlGfhEW7W6ZRcUlfom5qQwSGHLBpUV5IBlmBkYGJiDJAKRBEALgogA=)
+  last-modified (1582018813136)
+}
+train (t-ei2k2cng96jxlkvxnhf5euxu4) {
+  utterance ([g:GetCategories] List book categories)
+  plan (Y2BikC3LLNMrSM1LL83Mc8rPzy7Wc04sSU3PL6r0LEnNZZDDkHZPLYGqyEwtZmAEQgYoBpIA)
+  last-modified (1581325462340)
+}
+train (t-eraabdc81ciohvqbrmeuhk703) {
+  utterance ("[g:GetBooksByCategory] list (cookery)[v:ChildGenre:Food+&+Drink] (non-fiction)[v:ParentGenre:NonFiction] (e books)[v:Format:Ebook]")
+  plan (Y2BlUCzLLNMrSM1LL83Mc8rPzy7WA5HOiSWp6flFlZ4lqbkMyhhK3FNLwAynSphCBmkMRc4ZmTkp7ql5RakM4hiSbvlFuYklDDIYEgGJRal5JRBtLAyMDEwMzECaAciCQBhAkgMA)
+  last-modified (1580896122364)
+}

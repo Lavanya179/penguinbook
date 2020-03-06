@@ -1,0 +1,139 @@
+vocab (ChildGenre) {
+  "Action" {
+    "action"
+    "adventure"
+    "action and adventure"
+    "action & adventure"
+  }
+  "General" {
+    "general"
+    "literary"
+  }
+  "Anthologies" {
+    "anthologies"
+  }
+  "Classics" {
+    "classics"
+    "the classics"
+        "classic"
+  }
+  "Crime" {
+    "crime"
+    "thrillers"
+    "mystery"
+  }
+  "Fantasy" {
+    "fantasy"
+  }
+  "Graphic+Novels" {
+    "graphic novels"
+  }  
+  "Horror" {
+    "horror"
+  }
+  "Poetry" {
+    "poetry"
+  }
+  "Romance" {
+    "romance"
+    "romantic"
+    |"love"
+  }
+  "Science+Fiction" {
+    "science fiction"
+    "Sci-Fi"
+    "Sci Fi"
+    "Scifi"
+    "scifi"
+    "Scifi"
+  }
+  "Short+Stories" {
+    "short stories"
+    "Short Stories"
+  }
+  "The+Classics" {
+    "the classics"
+    "The Classics"
+  }   
+"Art+Architecture+Photography" {
+    "art architecture and photography"
+    "art"
+    "architecture"
+    "photography"
+  }
+  "Biographies" {
+    "Bbiographies"
+  }
+  "Business,+Economics+&+Law" {
+    "business"
+    "economics"
+    "law"
+    "Business, Economics & Law"
+  }
+  "Computing+&+Technology" {
+    "computing"
+    "technology"
+    "Computing & Technology"
+  }  
+  "Education+&+Reference" {
+    "education"
+    "reference"
+    Education & Reference
+  }
+  "Food+&+Drink" {
+    "food and drink"
+    "Food & Drink"
+    "food & drink"
+    "food"
+    "cookery"
+    "drink"
+  }
+  "Health+&+Lifestyle" {
+    "health"
+    "lifestyle"
+    "Health & Lifestyle"
+    "health and lifestyle"    
+  } 
+  "History" {
+    "history"
+  } 
+  "Music,+Stage+&+Screen" {
+    "music"
+    "stage"
+    "screen"
+    "music, stage and screen"
+    "Music, Stage & Screen"
+  }
+  "Politics,+Philosophy+&+Culture" {
+    "politics"
+    "philosophy"
+    "culture"
+    "Politics, Philosophy & Culture"
+    "politics, philosophy and culture"
+  } 
+  "Science+&+Nature" {
+    "science"
+    "nature"
+  }  
+  "Spirituality+&+Beliefs" {
+    "spirituality"
+    "beliefs"
+    "religion"
+    "Spirituality & Beliefs"
+    "spirituality and beliefs"
+  }   
+  "Sports" {
+    "sport"
+    "sports"
+  } 
+  "Travel" {
+    "travel"
+  } 
+  "Activity+&+Interactive+Books" {
+    "activity"
+    "interactive books"
+    "early learning"
+    "fairytales" 
+    "Activity & Interactive Books"      
+  }             
+}

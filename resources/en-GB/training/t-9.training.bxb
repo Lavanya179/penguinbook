@@ -1,0 +1,20 @@
+train (t-950ao3dljng63mybnzbzknemp) {
+  utterance ("[g:GetBooksByCategory] Find (crime)[v:ChildGenre:Crime] (novels)[v:ParentGenre:Fiction]")
+  plan (Y2BhUCzLLNMrSM1LL83Mc8rPzy7WA5HOiSWp6flFlZ4lqbkMyhhK3FNLwAynSphCBmkMRc4ZmTkp7ql5RakMMhiSAYlFqXklEFlmBkYGJiDJAKRBEALgogA=)
+  last-modified (1580224367522)
+}
+train (t-9dqcn95usxp7nortwtpbi6khv) {
+  utterance ("[g:GetBooksByAuthor] list novels writen by (Iris)[v:FirstName] (Murdoch)[v:Surname]")
+  plan (Y2BhkCrLLNMrSM1LL83Mc8rPzy7WA5OeJam5DIoYcu6pJWCGU6VjaUlGfhEW7W6ZRcUlfom5qQwSGHLBpUV5IBlmBkYGJiDJAKRBEALgogA=)
+  last-modified (1581932205426)
+}
+train (t-9mx27n0pp1825uyqai4nreic3) {
+  utterance ("[g:GetBooksByAuthor] list the novels of (x)[v:Surname]")
+  plan (Y2BmkCrLLNMrSM1LL83Mc8rPzy7WA5OeJam5DIoYcu6pJWCGU6VjaUlGfhGDBIaS4NKivMTcVAYmBkYgZgCSjAwgAOUDAA==)
+  last-modified (1582102403283)
+}
+train (t-9w8599sb4p397mm48tyl4paxt) {
+  utterance ("[g:GetBooksByAuthor] get (Edgar)[v:FirstName] Allan (Poe)[v:Surname]'s books")
+  plan (Y2BhkCrLLNMrSM1LL83Mc8rPzy7WA5OeJam5DIoYcu6pJWCGU6VjaUlGfhEW7W6ZRcUlfom5qQwSGHLBpUV5IBlmBkYGJiDJAKRBEALgogA=)
+  last-modified (1582018766345)
+}

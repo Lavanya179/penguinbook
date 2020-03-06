@@ -1,0 +1,22 @@
+layout {
+  match: BooksItem (this)
+  mode (Details)
+  content {
+    section {
+      content {
+
+          image{
+            url("[#{value(this.imageUrl)}]")
+            aspect-ratio(4:3)
+            object-fit (Contain)
+            object-position (Center)
+          }
+          
+        paragraph{
+          value("[#{value(this.description)}]")
+        }
+      }
+    }
+  }
+}
+

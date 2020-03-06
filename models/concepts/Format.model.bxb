@@ -1,0 +1,7 @@
+enum (Format) {
+  description (Main book catergies)
+  // Capitals
+  symbol (Paperback)
+  symbol (Ebook)
+  symbol (Hardback)
+}

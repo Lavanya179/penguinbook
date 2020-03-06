@@ -1,0 +1,47 @@
+result-view {
+  match : AuthorItem (authorItem) {
+    max (Many)
+    min (Required)
+  }
+  message{
+    if (authorItem[0].author=='') {
+      template-macro (PenguinBooks_1_3_No_Author) {
+        param (theBook) {expression (authorItem[0].title)}
+      }
+    } else {
+      template-macro (PenguinBooks_2_0_Title_Heading) {
+        param (theTitle)  {expression (authorItem[0].title)}
+        param (theAuthor) {expression (authorItem[0].author)}
+      }
+    }
+  }
+  render {
+    layout {
+      section {
+        content {
+          image{
+            url("[#{value(authorItem.imageUrl)}]")
+             aspect-ratio(4:3)
+            object-fit (Contain)
+            object-position (Center)
+          }
+          single-line {
+            text {
+              style (Title_M)
+              value ("[#{value(authorItem.author)}]")
+            }
+          }
+          single-line {
+            text {
+              style (Legal)
+              value ("[#{value(authorItem.contributor)}]")
+            }
+          }          
+          paragraph{
+            value("[#{value(authorItem.description)}]")
+          }  
+        }
+      }
+    }
+  }
+}

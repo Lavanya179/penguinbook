@@ -1,0 +1,7 @@
+action (GetCategories) {
+
+  description (Retrieving categories from Penguin)
+  type (Search)
+  output (CategoryItem)
+}
+

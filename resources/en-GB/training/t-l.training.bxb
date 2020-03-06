@@ -1,0 +1,10 @@
+train (t-l21yq2fi7t1uwb8g0wrnp505z) {
+  utterance ("[g:GetBooksByCategory] Find (horror)[v:ChildGenre:Horror] (fiction)[v:ParentGenre:Fiction]")
+  plan (Y2BhUCzLLNMrSM1LL83Mc8rPzy7WA5HOiSWp6flFlZ4lqbkMyhhK3FNLwAynSphCBmkMRc4ZmTkp7ql5RakMMhiSAYlFqXklEFlmBkYGJiDJAKRBEALgogA=)
+  last-modified (1580211283364)
+}
+train (t-lvhs0t2xsk80g0krofc3rlf6c) {
+  utterance ([g:GetCategories] get book categories)
+  plan (Y2BikC3LLNMrSM1LL83Mc8rPzy7Wc04sSU3PL6r0LEnNZZDDkHZPLYGqyEwtZmAEQgYoBpIA)
+  last-modified (1580313590328)
+}

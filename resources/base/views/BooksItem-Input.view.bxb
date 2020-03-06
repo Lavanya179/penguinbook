@@ -1,0 +1,49 @@
+result-view {
+  match : BooksItem (booksItem) {
+    max (Many)
+    min (Required)
+  }
+  message{
+    if (size(booksItem)<1) {
+      template-macro (PenguinBooks_1_2_No_Books) {
+        param (theAuthor) {expression (booksItem[0].authorTitle)}
+      }
+    } else {
+      if (booksItem[0].unknownAuthor=='yes') {
+          template-macro (PenguinBooks_2_0_No_Author) {
+           param (noAuthor) {expression (booksItem[0].authorTitle)}
+          }
+      }else {
+        if (size(booksItem)>1) {
+          template-macro (PenguinBooks_1_0_Title_Heading) {
+            param (bookCount){
+              expression (size(booksItem))
+            }
+            param (theAuthor) {expression (booksItem[0].authorTitle)}
+          }
+        } else {
+          template-macro (PenguinBooks_1_0_A_Title_Heading) {
+            param (theAuthor) {expression (booksItem[0].authorTitle)}
+          }
+        }
+      }
+    }
+  }
+  render {
+    layout {
+      section {
+        content {
+          for-each (booksItem) {
+            as (item) {
+              layout-macro(books-summary){
+                param(booksItem){
+                  expression(item)
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

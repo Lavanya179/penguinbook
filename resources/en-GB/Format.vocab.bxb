@@ -1,0 +1,15 @@
+vocab (Format) {
+  "Paperback" {
+    "paperback"
+  }
+  "Ebook" {
+    "eBook"
+    "e book"
+    "ebook"
+    "ebooks"
+    "e books"
+  }
+  "Hardback" {
+    "hardback"
+  }
+}

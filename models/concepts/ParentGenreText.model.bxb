@@ -1,0 +1,3 @@
+text (ParentGenreText) {
+  description (if nonFiction contains books otherwise stories)
+}

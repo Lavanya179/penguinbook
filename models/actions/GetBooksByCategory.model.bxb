@@ -1,0 +1,50 @@
+action (GetBooksByCategory) {
+
+  description (Retrieving books from Penguin)
+  type (Search)
+  collect {
+    input (parentGenre){
+      type (ParentGenre)
+      max (One) min (Optional)
+          default-select { 
+            with-learning
+            with-rule {
+              select-first
+            }
+          }
+    } 
+    input (childGenre){
+      type (ChildGenre)
+      max (One) min (Required)
+      default-init{
+        intent{
+          goal : GetBooksByCategory
+          value : ChildGenre$expr(childGenre)
+        }
+      }
+    }
+
+    input (format){
+      type (Format)
+      max (One) min (Optional)
+          default-select { 
+            with-learning
+            with-rule {
+              select-first
+            }
+          }
+    }
+
+    input (page){
+      type (Page)
+      max (One) min (Optional)
+          default-select { 
+            with-learning
+            with-rule {
+              select-first
+            }
+          }
+    }    
+  }
+  output (BookCategoryItem)
+}

@@ -1,0 +1,3 @@
+text (LastName) {
+  description (The author of a piece of news)
+}

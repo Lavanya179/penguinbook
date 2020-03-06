@@ -1,0 +1,5 @@
+structure (DateTime) {
+  description (The date of a news retrieved from the feed)
+  role-of (time.DateTime)
+}
+

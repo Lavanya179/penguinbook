@@ -1,0 +1,51 @@
+result-view {
+  match: BookCategoryDetails (item) {
+    min (Required)
+    max (One)
+  }
+
+  message{
+    template-macro (PenguinBooks_3_0_Category_Author_Heading) {
+        param (theTitle) {expression (item.title)}
+        param (theAuthor) {expression (item.author)}
+      }
+  }
+
+  render {
+
+    layout {
+      section{
+        content {
+            image-card{
+              image-url("[#{value(item.imageUrl)}]")
+              aspect-ratio(4:3)
+              image-object-fit (Contain)
+              image-object-position (Center)
+              title-area{
+                slot1{
+                  text{
+                    style(Title_S)
+                    value("")
+                  }
+                }
+              }
+              on-click {
+                intent {
+                  goal: PunchoutString
+                  value: PunchoutString$expr(item.theURL)
+                }
+              }
+            } 
+            paragraph{
+              value("[#{value(item.description)}]")
+            }  
+          }
+      }
+    }
+  }
+    conversation-drivers{
+    conversation-driver {
+        template ("search for books by [#{value(item.author)}] ")
+    }
+  }
+}

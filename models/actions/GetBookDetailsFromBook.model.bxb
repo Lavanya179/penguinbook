@@ -1,0 +1,13 @@
+action (GetBookDetailsFromBook) {
+
+  description (Retrieving books from Penguin)
+  type (Search)
+  collect {
+        input (booksItem){
+      type (BooksItem)
+      max (One) min (Required)
+ 
+    } 
+  }
+  output (BookDetails)
+}

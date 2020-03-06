@@ -1,0 +1,112 @@
+vocab (ExtraChildGenre) {
+  "Action+&+Adventure" {
+    "action"
+    "adventure"
+  }
+  "Anthologies" {
+    "anthologies"
+  }
+  "Classics" {
+    "classics"
+    "the classics"
+  }
+  "Crime" {
+    "crime"
+    "thrillers"
+    "mystery"
+    "thriller"
+    "murder"
+  }
+  "Fantasy" {
+    "fantasy"
+  }
+  "Graphic+Novels" {
+    "graphic novels"
+  }  
+  "Horror" {
+    "horror"
+  }
+  "Poetry" {
+    "poetry"
+  }
+  "Romance" {
+    "romance"
+  }
+  "Science+Fiction" {
+    "science fiction"
+    "Sci-Fi"
+    "sci fi"
+    "dystopian"
+  }
+  "Short+Stories" {
+    "short stories"
+  }
+  "The+Classics" {
+    "the classics"
+  }   
+"Art+Architecture+Photography" {
+    "art architecture and photography"
+    "art"
+    "architecture"
+    "photography"
+  }
+  "Biographies" {
+    "Bbiographies"
+  }
+  "Business,+Economics+&+Law" {
+    "business"
+    "economics"
+    "law"
+  }
+  "Computing+&+Technology" {
+    "computing"
+    "technology"
+  }  
+  "Education+&+Reference" {
+    "education"
+    "reference"
+  }
+  "Food+&+Drink" {
+    "food"
+    "drink"
+  }
+  "Health+&+Lifestyle" {
+    "health"
+    "lifestyle"
+  } 
+  "History" {
+    "history"
+  } 
+  "Music,+Stage+&+Screen" {
+    "music"
+    "stage"
+    "screen"
+  } 
+  "Politics,+Philosophy+&+Culture" {
+    "politics"
+    "philosophy"
+    "culture"
+  } 
+  "Science+&+Nature" {
+    "science"
+    "nature"
+  }  
+  "Spirituality+&+Beliefs" {
+    "spirituality"
+    "beliefs"
+    "religion"
+  }   
+  "Sports" {
+    "sport"
+    "sports"
+  } 
+  "Travel" {
+    "travel"
+  } 
+  "Activity+&+Interactive+Books" {
+    "activity"
+    "interactive books"
+    "early learning"
+    "fairytales"        
+  }             
+}

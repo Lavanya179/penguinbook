@@ -1,0 +1,31 @@
+structure (AuthorItem) {
+  description (A piece of news from the RSS)
+  property (imageUrl) {
+    type (ImageUrl)
+    min (Optional) max (One)
+  }
+  property (description) {
+    type (Description)
+    min (Optional) max (One)
+  }
+  property (contributor) {
+    type (Contributor)
+    min (Optional) max (One)
+  }
+  property (author) {
+    type (Author)
+    min (Optional) max (One)
+  }
+    property (authorTitle) {
+    type (AuthorTitle)
+    min (Optional) max (One)
+  }
+  property (unknownAuthor) {
+    type (UnknownAuthor)
+    min (Optional) max (One)
+  }
+  property (title) {
+    type (Title)
+    min (Optional) max (One)
+  }
+}

@@ -1,0 +1,5 @@
+train (t-4nbt22fuawh3t8n3bao1m2nb2) {
+  utterance ("[g:GetBooksByAuthor] Find books written by (Graham)[v:FirstName] (Greene)[v:Surname]")
+  plan (Y2BhkCrLLNMrSM1LL83Mc8rPzy7WA5OeJam5DIoYcu6pJWCGU6VjaUlGfhEW7W6ZRcUlfom5qQwSGHLBpUV5IBlmBkYGJiDJAKRBEALgogA=)
+  last-modified (1581932002206)
+}
